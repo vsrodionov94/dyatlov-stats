@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Париматч Статистика</title>
+</head>
+<body>
+  <main class="main">
+    <div class="main__str">
+      <p>Общее количество открытий:</p> <p class="main__count" id="opened">0</p>
+    </div>
+    <div class="main__str">
+      <p>Всего пользователей:</p> <p class="main__count" id="users">0</p>
+    </div>
+  </main>
+
+  <ul class="days"></ul>
+
+  <ul class="table"></ul>
+
+  <template id="user-template">
+    <li class="user">
+      <p> VKID </p>
+      <p class="user__id">1234</p>
+      <p> Количество ключей </p>
+      <p class="user__keys"></p>
+      <p> Количество артефактов</p>
+      <p class="user__artifacts">0</p>
+    </li>
+  </template>
+
+  <template id="day-template">
+    <li class="day">
+      <p> Номер дня </p>
+      <p class="day__id">1234</p>
+      <p> Количество ключей </p>
+      <p class="day__keys"></p>
+      <p> Количество аудио</p>
+      <p class="day__audio">0</p>
+    </li>
+  </template>
+</body>
+<script src="./script.js"> </script>
+</html>
