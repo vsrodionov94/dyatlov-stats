@@ -18,6 +18,24 @@
 
   <ul class="days"></ul>
 
+  <form id="find-user">
+    <input type="number">
+    <button>Найти</button>
+  </form>
+
+  <ul class="user-info">
+    <li class="user-info__item"> <p>Кол-во ключей:</p> <p id="user-keys">0</p></li>
+    <li class="user-info__item"> <p>Кол-во артифактов:</p> <p id="user-artifacts">0</p></li>
+    <li class="user-info__item"> <p>Попыток ввода ключа:</p> <p id="user-tryKeyCount">0</p></li>
+    <li class="user-info__item"> <p>Попыток ввода аудио:</p> <p id="user-tryAudioCount">0</p></li>
+    <li class="user-info__item"> <p>Попыток ответа пользователям:</p> <p id="user-tryUserAnswerCount">0</p></li>
+    <li class="user-info__item"> <p>Попыток отправки пользователям:</p> <p id="user-tryUserSendCount">0</p></li>
+    <li class="user-info__item"> <p>Приглашенных пользователей:</p> <p id="user-inviteCount">0</p></li>
+    <li class="user-info__item"> <p>Последний день входа:</p> <p id="user-lastDay">0</p></li>
+    <li class="user-info__item"> <p>Отвеченные ключи с твича:</p> <p id="user-answerTwitch">0</p></li>
+    <li class="user-info__item"> <p>Ответил ли на ключ с тв:</p> <p id="user-tvKeyAnswered">0</p></li>
+  </ul>
+
   <ul class="table"></ul>
 
   <template id="user-template">
