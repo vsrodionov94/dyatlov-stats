@@ -98,7 +98,7 @@ const setUserInfo = (data) => {
   user_keys.textContent = data.keys;
   user_artifacts.textContent = data.artifacts;
   user_tryKeyCount.textContent = data.tryKeyCount;
-  user_tryAudioCount.textContent = data.tryAudioCount > 0 ? data.tryAudioCount : 'Ввел верно';
+  user_tryAudioCount.textContent = data.tryAudioCount >= 0 ? data.tryAudioCount : 'Ввел верно';
   user_tryUserAnswerCount.textContent = data.tryUserAnswerCount;
   user_tryUserSendCount.textContent = data.tryUserSendCount;
   user_inviteCount.textContent = data.inviteCount;
